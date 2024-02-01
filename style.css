@@ -14,7 +14,6 @@
 
   --fw-big-shoulders: 700;
   --fw-lexend: 400;
-
 }
 * {
   margin: 0;
@@ -31,10 +30,10 @@
   align-items: center;
 }
 .cards {
-    display: flex;
-    margin: 1rem;
-    overflow: hidden;
-    border-radius: 0.5rem;
+  display: flex;
+  margin: 1rem;
+  overflow: hidden;
+  border-radius: 0.5rem;
 }
 .wrapper {
   display: flex;
@@ -75,8 +74,8 @@
   color: var(--clr-ntrl-white);
 }
 .card-sedans {
-    background-color: var(--clr-prm-orange);
-  }
+  background-color: var(--clr-prm-orange);
+}
 .card-suvs {
   background-color: var(--clr-prm-cyan);
 }
@@ -90,8 +89,11 @@
   color: var(--clr-prm-darkcyan);
 }
 
-@media (max-width:820px) {
-    .cards {
-        flex-direction: column;
-      }
+@media (max-width: 820px) {
+  .cards {
+    flex-direction: column;
+  }
+  .viewport {
+    height: max-content;
+  }
 }
