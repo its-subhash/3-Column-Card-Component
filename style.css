@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Lexend+Deca:wght@100..900&display=swap");
+
+:root {
+  --clr-prm-orange: hsl(31, 77%, 52%);
+  --clr-prm-cyan: hsl(184, 100%, 22%);
+  --clr-prm-darkcyan: hsl(179, 100%, 13%);
+
+  --clr-ntrl-white: hsl(0, 0%, 100%, 0.75);
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-ntrl-lg-gray: hsl(0, 0%, 95%);
+
+  --font-lexend: "Lexend Deca", sans-serif;
+  --font-big-shoulders: "Big Shoulders Display", sans-serif;
+
+  --fw-big-shoulders: 700;
+  --fw-lexend: 400;
+
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 0.9375rem;
+  color: var(--clr-white);
+}
+.viewport {
+  display: grid;
+  width: 100dvw;
+  height: 100dvh;
+  justify-content: center;
+  align-items: center;
+}
+.cards {
+    display: flex;
+    margin: 1rem;
+    overflow: hidden;
+    border-radius: 0.5rem;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  gap: 2rem;
+}
+.card {
+  max-width: 280px;
+}
+.wrapper img {
+  width: 4rem;
+}
+.wrapper h1 {
+  font-size: 2rem;
+  font-family: var(--font-big-shoulders);
+  font-weight: var(--fw-big-shoulders);
+}
+.wrapper p {
+  font-family: var(--font-lexend);
+  font-weight: var(--fw-lexend);
+  color: var(--clr-ntrl-white);
+}
+.wrapper a {
+  margin-top: 3rem;
+  text-decoration: none;
+  font-family: var(--font-lexend);
+  border: 2px solid var(--clr-ntrl-white);
+  width: max-content;
+  padding: 0.8rem 1.2rem;
+  border-radius: 24px;
+  color: var(--clr-prm-orange);
+  background: var(--clr-ntrl-white);
+  transition: all 0.2s ease;
+}
+.card a:hover {
+  background-color: transparent;
+  color: var(--clr-ntrl-white);
+}
+.card-sedans {
+    background-color: var(--clr-prm-orange);
+  }
+.card-suvs {
+  background-color: var(--clr-prm-cyan);
+}
+.card-suvs a {
+  color: var(--clr-prm-cyan);
+}
+.card-luxury {
+  background-color: var(--clr-prm-darkcyan);
+}
+.card-luxury a {
+  color: var(--clr-prm-darkcyan);
+}
+
+@media (max-width:820px) {
+    .cards {
+        flex-direction: column;
+      }
+}
